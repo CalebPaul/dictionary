@@ -19,4 +19,8 @@ public class Word {
   public static List<Word> all() {
     return instances;
   }
+
+  public static void clear() {
+    instances.clear();
+  }
 }
