@@ -14,4 +14,11 @@ public class DefinitionTest {
     assertEquals("A city in Oregon", testDefinition.getMeaning());
   }
 
+  public void all_returnsAllInstancesOfDefinitions_true() {
+    Definition testDefinition = new Definition( "A city in Oregon");
+    Definition nextDefinition = new Definition( "A city in Trinidad");
+    assertEquals(true, Definition.all().contains(testDefinition));
+    assertEquals(true, Definition.all().contains(nextDefinition));
+  }
+
 }
