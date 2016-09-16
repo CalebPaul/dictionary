@@ -17,5 +17,19 @@ public class App {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
+    post("/", request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      ArrayList<Word> words = request.session().attribute("words");
+      if (words == null) {
+        words = new ArrayList<Words>();
+        request.session().attribute("words", words);
+      }
+      String _word = request.queryParams("inputWord");
+      String _definition = request.queryParams("inputDefinition");
+      Word newWord = new Word(_word);
+
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
   }
 }
