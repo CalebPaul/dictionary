@@ -60,9 +60,7 @@ public class WordTest {
     Definition testDefinition = new Definition( "A city in Oregon");
     newWord.addDefinition(testDefinition);
     assertTrue(newWord.getDefinitions().contains(testDefinition));
-
   }
-
 
 
 }
