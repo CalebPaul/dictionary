@@ -15,5 +15,13 @@ public class WordTest {
     assertEquals("Portland", newWord.getTerm());
   }
 
+  @Test
+  public void all_returnsAllInstancesOfTerm_true() {
+    Word newWord = new Word("Portland");
+    Word nextWord = new Word("Trinidad");
+    assertEquals(true, Word.all().contains(newWord));
+    assertEquals(true, Word.all().contains(nextWord));
+  }
+
 
 }
