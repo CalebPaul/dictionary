@@ -6,12 +6,14 @@ public class Word {
   private String mTerm;
   private static List<Word> instances = new ArrayList<Word>();
   private int mId;
+  private List<Definition> mDefinitions;
 
 
   public Word(String term) {
     mTerm = term;
     instances.add(this);
     mId = instances.size();
+    mDefinitions = new ArrayList<Definition>();
   }
 
   public String getTerm() {
@@ -32,5 +34,13 @@ public class Word {
 
   public static Word find(int id) {
     return instances.get(id - 1);
+  }
+
+  public List<Definition> getDefinitions() {
+    return mDefinitions;
+  }
+
+  public void addDefinition(Definition definition) {
+    mDefinitions.add(definition);
   }
 }

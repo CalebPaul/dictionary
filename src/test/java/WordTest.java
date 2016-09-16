@@ -41,12 +41,26 @@ public class WordTest {
     assertEquals(1, newWord.getId());
   }
 
-
   @Test
   public void getId_returnsWordWithSameId_nextWord() {
     Word newWord = new Word("Portland");
     Word nextWord = new Word("Trinidad");
     assertEquals(Word.find(nextWord.getId()), nextWord);
+  }
+
+  @Test
+  public void getDefinitions_initiallyReturnsEmptyList_ArrayList() {
+    Word newWord = new Word("Portland");
+    assertEquals(0, newWord.getDefinitions().size());
+  }
+
+  @Test
+  public void addDefinition_addsDefinitionToList_true() {
+    Word newWord = new Word("Portland");
+    Definition testDefinition = new Definition( "A city in Oregon");
+    newWord.addDefinition(testDefinition);
+    assertTrue(newWord.getDefinitions().contains(testDefinition));
+
   }
 
 

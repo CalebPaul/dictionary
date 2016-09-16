@@ -18,7 +18,7 @@ public class DefinitionTest {
   @Test
   public void all_returnsAllInstancesOfDefinitions_true() {
     Definition testDefinition = new Definition( "A city in Oregon");
-    Definition nextDefinition = new Definition( "A city in Trinidad");
+    Definition nextDefinition = new Definition( "A super cool island");
     assertEquals(true, Definition.all().contains(testDefinition));
     assertEquals(true, Definition.all().contains(nextDefinition));
   }
@@ -40,7 +40,7 @@ public class DefinitionTest {
   @Test
   public void find_returnsDefinitionWithSameId_nextDefinition() {
     Definition testDefinition = new Definition( "A city in Oregon");
-    Definition nextDefinition = new Definition( "A city in Trinidad");
+    Definition nextDefinition = new Definition( "A super cool island");
     assertEquals(Definition.find(nextDefinition.getId()), nextDefinition);
   }
 
