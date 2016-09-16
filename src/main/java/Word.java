@@ -9,4 +9,8 @@ public class Word {
   public Word(String term) {
     mTerm = term;
   }
+
+  public String getTerm() {
+    return mTerm;
+  }
 }

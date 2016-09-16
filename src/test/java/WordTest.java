@@ -9,4 +9,11 @@ public class WordTest {
     assertEquals(true, newWord instanceof Word);
   }
 
+  @Test
+  public void word_instantiatesWithTerm_true() {
+    Word newWord = new Word("Portland");
+    assertEquals("Portland", newWord.getTerm());
+  }
+
+
 }
