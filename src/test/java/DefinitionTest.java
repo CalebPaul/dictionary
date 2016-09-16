@@ -6,5 +6,7 @@ public class DefinitionTest {
   @Test
   public void Definition_instantiatesCorrectly_true() {
     Definition testDefinition = new Definition( "A city in Oregon");
-    assertTrue(testDefinition instanceof Definition); 
+    assertTrue(testDefinition instanceof Definition);
   }
+
+}
