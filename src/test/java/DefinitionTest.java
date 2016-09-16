@@ -37,4 +37,11 @@ public class DefinitionTest {
     assertEquals(1, testDefinition.getId());
   }
 
+  @Test
+  public void find_returnsDefinitionWithSameId_nextDefinition() {
+    Definition testDefinition = new Definition( "A city in Oregon");
+    Definition nextDefinition = new Definition( "A city in Trinidad");
+    assertEquals(Definition.find(nextDefinition.getId()), nextDefinition);
+  }
+
 }
