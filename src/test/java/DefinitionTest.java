@@ -9,11 +9,13 @@ public class DefinitionTest {
     assertTrue(testDefinition instanceof Definition);
   }
 
+  @Test
   public void Definition_getsMeaning_true() {
     Definition testDefinition = new Definition( "A city in Oregon");
     assertEquals("A city in Oregon", testDefinition.getMeaning());
   }
 
+  @Test
   public void all_returnsAllInstancesOfDefinitions_true() {
     Definition testDefinition = new Definition( "A city in Oregon");
     Definition nextDefinition = new Definition( "A city in Trinidad");
