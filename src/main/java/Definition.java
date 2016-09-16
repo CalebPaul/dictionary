@@ -33,6 +33,4 @@ public class Definition {
     return instances.get(id - 1);
   }
 
-
-
 }
