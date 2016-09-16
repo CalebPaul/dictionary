@@ -1,22 +1,6 @@
-<h2>Current Words</h2>
-
-#if($words)
-  <ul>
-    #foreach($word in $words)
-      <li>$word.getTerm() | $word.getDefinitions()</li>
-    #end
-  </ul>
-#else
-  <p>No words at the moment.</p>
-#end
-<h3>Add a word:</h3>
-
-<form class="form-group" action="/" method="post">
-  <label for="inputWord">Word</label>
-  <input id="inputWord" type="text" name="inputWord" >
-
-  <label for="inputDefinition">Definition</label>
-  <input id="inputDefinition" type="text" name="inputDefinition" >
-
-  <button type="submit" class="btn btn-info" name="button">Add Word</button>
-</form>
+<ul>
+  <li><a href="/words">View Word List</a></li>
+  <li><a href="/words/new">Add a new Word</a></li>
+  <li><a href="/definitions">View all current definitions</a></li>
+  <li><a href="/definitions/new">Add a new definitions</a></li>
+</ul>

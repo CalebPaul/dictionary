@@ -1,0 +1,16 @@
+<h3>Words</h3>
+
+#if($words)
+  <ul>
+    #foreach($word in $words)
+      <li><a href="/words/$word.getId()">$word.getTerm()</a></li>
+    #end
+  </ul>
+#else
+<p>No words.</p>
+#end
+<br>
+<ul>
+  <li><a href="/words/new">Add new word</a></li>
+  <li><a href="/"></a>Go to main page</li>
+</ul>
