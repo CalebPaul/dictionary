@@ -28,6 +28,7 @@ public class DefinitionTest {
     assertEquals(Definition.all().size(), 0);
   }
 
+  @Test
   public void getId_DefinitionsInstantiateWithAnID_1() {
     Definition.clear();
     Definition testDefinition = new Definition( "A city in Oregon");
