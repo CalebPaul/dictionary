@@ -21,4 +21,11 @@ public class DefinitionTest {
     assertEquals(true, Definition.all().contains(nextDefinition));
   }
 
+  @Test
+  public void clear_emptiesAllDefinitionsFromArrayList_0() {
+    Definition testDefinition = new Definition( "A city in Oregon");
+    Definition.clear();
+    assertEquals(Definition.all().size(), 0);
+  }
+
 }
