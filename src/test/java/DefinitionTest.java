@@ -9,4 +9,9 @@ public class DefinitionTest {
     assertTrue(testDefinition instanceof Definition);
   }
 
+  public void Definition_getsMeaning_true() {
+    Definition testDefinition = new Definition( "A city in Oregon");
+    assertEquals("A city in Oregon", testDefinition.getMeaning());
+  }
+
 }

@@ -7,7 +7,10 @@ public class Definition {
 
   public Definition(String meaning) {
   mMeaning = meaning;
+  }
 
+  public String getMeaning() {
+    return mMeaning;
   }
 
 
