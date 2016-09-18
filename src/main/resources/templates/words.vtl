@@ -1,9 +1,9 @@
-<h3>Words</h3>
+<h3>All Words</h3>
 
 #if($words)
   <ul>
     #foreach($word in $words)
-      <li><a href="/words/$word.getId()">$word.getTerm()</a></li>
+      <li><h3><a href="/words/$word.getId()">$word.getTerm()</a></h3></li>
     #end
   </ul>
 #else
@@ -12,5 +12,5 @@
 <br>
 <ul>
   <li><a href="/words/new">Add new word</a></li>
-  <li><a href="/"></a>Go to main page</li>
+  <li><a href="/">Go to main page</a></li>
 </ul>

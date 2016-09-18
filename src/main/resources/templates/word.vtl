@@ -1,11 +1,12 @@
-<h1>$word.getName() tasks:</h1>
+<h2>Definition(s) of $word.getTerm():</h2>
 
 <ul>
-  #foreach($task in $word.getTasks())
-  <li>$task.getDescription()</li>
+  #foreach($task in $word.getDefinitions())
+  <li>$task.getMeaning()</li>
+  #end
 </ul>
 <br>
 <ul>
-  <li><a href="/words/$word.getId()/category/new">Add a new definition</a></li>
+  <li><a href="/words/$word.getId()/definitions/new">Add a new definition</a></li>
   <li><a href="/words">All words</a></li>
 </ul>
