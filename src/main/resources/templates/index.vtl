@@ -1,4 +1,14 @@
-<ul>
-  <li><a href="/words">View Word List</a></li>
-  <li><a href="/words/new">Add a new Word</a></li>
-</ul>
+<h3 class="text-center">All Words</h3>
+
+#if ($words)
+  <ul class="text-center">
+    #foreach ($word in $words)
+      <li class="text-center"><h5><a href="/words/$word.getId()">$word.getTerm()</a></h5></li>
+    #end
+  </ul>
+#else
+  <p>No words added yet.</p>
+#end
+<div class="">
+  <a href="/words/new">Add a new Word</a>
+</div>

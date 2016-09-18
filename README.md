@@ -10,15 +10,16 @@ _This program allows users to create a dictionary which keeps track of multiple 
 
 ## Specs
 
-* When user inputs a word and definition
+* When user inputs a word
   - program stores that word.
-  - program stores associated definition.
+  - program stores associated definitions, if any.
 
 
 
 * When user selects word
   - program displays word and current definition.
   - user can access a form to input new definitions for the word.
+  - user can input multiple definitions for the same word.
 
 
 
@@ -30,7 +31,7 @@ _This program allows users to create a dictionary which keeps track of multiple 
 
 ## Known Bugs
 
-_None_
+_None Known_
 
 ## Support and contact details
 
