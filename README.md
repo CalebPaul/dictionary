@@ -30,7 +30,7 @@ _This program allows users to create a dictionary which keeps track of multiple 
 
 ## Known Bugs
 
-_Currently in an incomplete state_
+_None_
 
 ## Support and contact details
 
